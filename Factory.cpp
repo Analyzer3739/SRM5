@@ -8,15 +8,15 @@ void Product::process() {
     std::cout << "Product";
 }
 void ProductA::process() {
-    std::cout << "A ";
-    strategy_->process();
+    std::cout << "ProductA ";
+   strategy_->process();
 }
 void ProductB::process() {
-    std::cout << "B ";
+    std::cout << "ProductB ";
     strategy_->process();
 }
 void ProductC::process() {
-    std::cout << "C ";
+    std::cout << "ProductC ";
     strategy_->process();
 }
 

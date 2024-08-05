@@ -11,7 +11,7 @@ class Product
 {
 public:
     Product() :strategy_(nullptr) {}
-    void process();
+    virtual void process();
     Strategy *&get();
 protected:
     Strategy* strategy_;
@@ -20,17 +20,17 @@ protected:
 class ProductA : public Product
 {
 public:
-    void process();
+    void process()override;
 };
 class ProductB : public Product
 {
 public:
-    void process();
+    void process()override;
 };
 class ProductC : public Product
 {
 public:
-    void process();
+    void process()override;
 };
 
 class Strategy
